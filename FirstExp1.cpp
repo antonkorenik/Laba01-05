@@ -1,27 +1,36 @@
 ﻿#include <iostream>
+#include <cmath>
 using namespace std;
-int a = 100;
-int n = 2;
+double A, B;
+
 int main()
 {
 	setlocale(0, "");
-	cout << "n = " << n << endl;
-	cout << "a = " << a << endl << "a % n = " << a % n << endl;
-
-	a = 256;
-	int k = n % 5;
-	cout << "a = " << a << endl << "a >> k = " << (a >> k) << endl;
-
-	a = 2;
-	k = n % 5;
-	cout << "a = " << a << endl << "a << k = " << (a << k) << endl;
-	cout << boolalpha;
-	cout << "((6 % 3 == 1) == (0 == 1)) = " << ((6 % 3 == 1) == (0 == 1)) << endl;
-	cout << "((2 != 2*3*4) && (2 != 24)) = " << ((2 != 2 * 3 * 4) && (2 != 24)) << endl;
-	cout << "((5 / 2 >= 5) || (2 >= 5)) = " << ((5 / 2 >= 5) || (2 >= 5)) << endl;
-	cout << "((8 % 3 == 1) == (2 == 1)) = " << ((8 % 3 == 1) == (2 == 1)) << endl;
-	cout << "((2 != 1*1*2) == (!2 != 2)) = " << ((2 != 1 * 1 * 2) == (!2 != 2)) << endl;
-
+	cout << "Введите А: ";
+	cin >> A;
+	cout << "Введите B: ";
+	cin >> B;
+	cout << "Cреднее арифметическое кубов: " <<(pow(A, 3) + pow(B, 3)) / 2 << endl;
+	cout << "Cреднее геометрическое модулей: " << sqrt(abs(A) * abs(B));
 	return 0;
 }
-		
+ /*#include <iostream>
+   #include <cmath>
+    using namespace std
+    double A, B, C;
+
+	int main()
+	setlocale(0, "");
+	cout << "Введите А: ";
+	cin >> A;
+	cout << "Введите B: ";
+	cin >> B;
+	cout << "Введите С: ";
+	cin >> C;
+	cout << "Наименьшее число: ";
+	if(A > B && A > C) cout << A;
+	if(B > A && B > C) cout << B;
+	if(C > A && C > B) cout << C;
+	return 0;
+	*/
+
