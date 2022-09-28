@@ -14,23 +14,25 @@ int main()
 	cout << "Cреднее геометрическое модулей: " << sqrt(abs(A) * abs(B));
 	return 0;
 }
- /*#include <iostream>
+ /*   #include <iostream>
    #include <cmath>
-    using namespace std
+using namespace std;
     double A, B, C;
 
 	int main()
-	setlocale(0, "");
-	cout << "Введите А: ";
-	cin >> A;
-	cout << "Введите B: ";
-	cin >> B;
-	cout << "Введите С: ";
-	cin >> C;
-	cout << "Наименьшее число: ";
-	if(A > B && A > C) cout << A;
-	if(B > A && B > C) cout << B;
-	if(C > A && C > B) cout << C;
-	return 0;
+	{
+		setlocale(0, "");
+		cout << "Введите А: ";
+		cin >> A;
+		cout << "Введите B: ";
+		cin >> B;
+		cout << "Введите С: ";
+		cin >> C;
+		cout << "Наименьшее число: ";
+		if (A < B && A < C) cout << A;
+		if (B < A && B < C) cout << B;
+		if (C < A && C < B) cout << C;
+		return 0;
+	}
 	*/
 
