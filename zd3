@@ -23,7 +23,7 @@ int main()
 
 
 
-const int z = 122; // кол-во букв.
+const int z = 122;
 int a = 97; 
 char letter;
 
