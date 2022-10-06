@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+char i;
+
+int main()
+{
+	srand(time(0));
+	for (char i = 0; i <= 9; i++)
+	{
+		cout << char('a' + rand() % ('z' - 'a')) << " ";
+	}
+	return 0;
+}
