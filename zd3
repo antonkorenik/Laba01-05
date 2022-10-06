@@ -1,1 +1,37 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+char c;
+int main()
+{
+	for (char c = 97; c <= 122; c++) cout << ' ' << c;
 
+	char c = 97;
+	while (c <= 122)
+	{
+		cout << "   " << c;
+		c++;
+	}
+
+	c = 97;
+	do
+	{
+		cout << "   " << c;
+		c++;
+
+	} while (c <= 122);
+
+
+
+const int z = 122; // кол-во букв.
+int a = 97; 
+char letter;
+
+for (int a = 97; a <= z; a+= 1)
+{
+	letter = (char)a;
+	cout << letter << endl;
+}
+
+return 0;
+}
