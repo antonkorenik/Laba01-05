@@ -32,6 +32,10 @@ using namespace std;
 		if (A < B && A < C) cout << A;
 		if (B < A && B < C) cout << B;
 		if (C < A && C < B) cout << C;
+		if (A == B && B == C && A == C) cout << A or B or C;
+		if (A == B && A < C) cout << A or B;
+		if (A == C && A < B) cout << A or C;
+		if (B == C && B < A) cout << B or C;
 		return 0;
 	}
 	*/
